@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="mainapp">#89BFB2</color>
+    <color name="textintro">#1E3E36</color>
+    <color name="bg_login">#54E1AA</color>
+    <color name="line">#4E5351</color>
+    <color name="text_logo">#0F4259</color>
+    <color name="ripperColor">#358E9D</color>
+    <color name="indicatorColor">#358E9D</color>
+    <color name="mainColor">#a2d9ff</color>
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">OldBook</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+    <string-array name="namebookarr">
+        <item>The orange tree</item>
+        <item>The making of a manager </item>
+        <item>The 100 startup</item>
+        <item>Sai Gon nam xua</item>
+        <item>Nhung tu nhan cua dia ly</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgrap"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.oldbook.ui.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action android:id="@+id/action_homefragment_to_categoryfragment"
+                app:destination="@id/categoryFragment"/>
+
+        <action
+            android:id="@+id/action_homefragment_to_cartfragment"
+            app:destination="@id/cartFragment" />
+        <action
+            android:id="@+id/action_homefragment_to_accountfragment"
+            app:destination="@id/accountFragment" />
+        <action
+            android:id="@+id/action_homefragment_to_searchfragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homefragment_to_detailfragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.oldbook.ui.fragment.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" >
+
+        <action
+            android:id="@+id/action_cartfragment_to_checkoutfragment"
+            app:destination="@id/checkoutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.oldbook.ui.fragment.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category">
+
+        <action
+            android:id="@+id/action_categoryfragment_to_detailfragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.oldbook.ui.fragment.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="com.example.oldbook.ui.fragment.CheckoutFragment"
+        android:label="fragment_checkout"
+        tools:layout="@layout/fragment_checkout" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.oldbook.ui.fragment.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search">
+
+        <action
+            android:id="@+id/action_homefragment_to_detailfragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.oldbook.ui.fragment.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail">
+        <action
+            android:id="@+id/action_detailfragment_to_cartfragment"
+            app:destination="@id/cartFragment" />
+
+    </fragment>
+
+    <argument
+        android:name="productid"
+        app:argType="string"
+        android:defaultValue="null" />
+</navigation>

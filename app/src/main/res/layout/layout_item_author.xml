@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginRight="8dp">
+
+    <LinearLayout
+        android:id="@+id/authorlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="500dp">
+
+            <ImageView
+                android:id="@+id/imgauthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/vasconcelos_jose_mauro" />
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/txtauthorname"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="name author"
+            android:textSize="15dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

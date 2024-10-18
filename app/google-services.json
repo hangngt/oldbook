@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "193130753162",
+    "firebase_url": "https://oldbook-73153-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "oldbook-73153",
+    "storage_bucket": "oldbook-73153.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193130753162:android:78bdf15f7234bbdd43d173",
+        "android_client_info": {
+          "package_name": "com.example.oldbook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPUDIAkeaDYv8l6QN6hcgXEri8L4let-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/bottom_home"
+        android:title="Home"
+        android:icon="@drawable/home_svgrepo_com"/>
+    <item android:id="@+id/bottom_category"
+        android:title="Category"
+        android:icon="@drawable/category_svgrepo_com"/>
+    <item
+        android:enabled="false"
+        android:title=""/>
+    <item android:id="@+id/bottom_cart"
+        android:title="Cart"
+        android:icon="@drawable/cart_shopping_svgrepo_com"/>
+    <item android:id="@+id/bottom_account"
+        android:title="Account"
+        android:icon="@drawable/account_svgrepo_com"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:translationZ="1000dp"
+    tools:context=".Activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="228dp"
+            app:srcCompat="@drawable/oldbook_logo" />
+
+        <EditText
+            android:id="@+id/editemaillg"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/bg_textinput"
+            android:elevation="15dp"
+            android:ems="10"
+            android:layout_marginBottom="10dp"
+            android:drawableRight="@drawable/email_1_svgrepo_com"
+            android:paddingRight="20dp"
+            android:hint="  Enter your email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:textSize="20dp" />
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/editpasslg"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="65dp"-->
+        <!--            android:paddingLeft="20dp"-->
+        <!--            android:ems="10"-->
+        <!--            android:inputType="textPassword"-->
+        <!--            android:drawableRight="@drawable/lock_alt_svgrepo_com"-->
+        <!--            android:paddingRight="20dp"-->
+        <!--            android:hint="   Enter your password"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:elevation="15dp"-->
+        <!--            android:background="@drawable/bg_textinput"/>-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutpasslg"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:ems="10"
+            app:passwordToggleEnabled="true"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editpasslg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="   Enter your password"
+                android:paddingRight="20dp"
+                android:background="@drawable/bg_textinput"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnlogin"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:background="@drawable/btn_logsign"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:elevation="5dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Or Continue with"
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+            <ImageView
+                android:id="@+id/imgbtnface"
+                android:background="@drawable/bg_img_logsign"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:padding="15dp"
+                android:layout_marginLeft="80dp"
+                app:srcCompat="@drawable/facebook_176_svgrepo_com" />
+            <ImageView
+                android:id="@+id/imgbtngg"
+                android:background="@drawable/bg_img_logsign"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:padding="15dp"
+                android:layout_marginLeft="90dp"
+                app:srcCompat="@drawable/google_svgrepo_com" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an Account?"
+                android:textSize="17dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtsignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Sign Up"
+                android:textSize="20dp"
+                android:textColor="@color/text_logo"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
